@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Sansita Swashed', cursive;
-    font-size: 20px;
 }
 
 body {
@@ -12,42 +11,21 @@ body {
 /* Style the header */
 
 .header {
-    background-color: rgb(167, 13, 108);
-    padding: 20px;
+    background-image: url('../img/pexels-drew-williams-3568520.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
     text-align: center;
 }
 
 .header h1 {
     font-size: 60px;
-    color: black
+    color: whitesmoke
 }
 
 .header p {
     font-size: 40px;
-    color: black
-}
-
-.column h2 {
-    color: green;
-    text-align: center;
-}
-
-
-/*Image Gallery*/
-
-.gallery {
-    padding: 20px;
-    float: left;
-    width: 33.33%;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-.gallery .desc {
-    padding: 15px;
-    text-align: center;
+    color: whitesmoke
 }
 
 
@@ -56,10 +34,19 @@ body {
 
 /* Ejemplos de estilo por clase*/
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     padding: 20px 20%;
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: moccasin;
 }
 
 
@@ -71,11 +58,32 @@ body {
     clear: both;
 }
 
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 15px;
+    text-align: center;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:600px) {
-    .column {
+    .one-column {
         width: 100%;
     }
 }
